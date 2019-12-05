@@ -14,13 +14,17 @@ docker-compose up
 ```
 
 On another terminal: 
-```
-curl -X POST http://localhost:5555/longtask
 
-# task id returned
+- Create a new task 
+  ```
+  curl -X POST http://localhost:5555/longtask
+  # task id returned
+  ```
 
-curl -X GET http://localhost:5555/status/<task_id>
-```
+- Check the task status
+  ```
+  curl -X GET http://localhost:5555/status/<task_id>
+  ```
 
 Experiments: 
 
